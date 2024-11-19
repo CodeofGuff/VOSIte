@@ -1,0 +1,243 @@
+:root {
+    --primary-color: #923ebf;
+    --primary-glow: rgba(146, 62, 191, 0.3);
+    --dark-bg: #1b1f23;
+    --darker-highlight: #141719;
+    --light-text: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 120px;
+}
+
+.profile-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 0 25px var(--primary-glow),
+                0 0 5px var(--primary-color);
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-image img:hover {
+    box-shadow: 0 0 35px var(--primary-glow),
+                0 0 10px var(--primary-color);
+}
+
+.profile-info h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px var(--primary-glow);
+}
+
+.demo-reel {
+    flex: 0 1 calc(33% - 1rem);
+    padding: 1rem 2rem;
+    height: fit-content;
+}
+
+.demo-reel h2, .about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-glow);
+}
+
+.audio-player {
+    margin-top: 1rem;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.control-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px var(--primary-glow);
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    box-shadow: 0 0 20px var(--primary-glow);
+    transform: translateY(-1px);
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: rgba(20, 23, 25, 0.7);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.1s linear;
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.track {
+    padding: 0.75rem;
+    background-color: rgba(20, 23, 25, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 0.5rem;
+}
+
+.track:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: translateX(5px);
+}
+
+.track.active {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.about-section {
+    flex: 1;
+    padding: 1rem 2rem;
+}
+
+.skills h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.skills ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills ul {
+        columns: 1;
+    }
+    
+    .demo-reel, .about-section {
+        flex: 1 1 100%;
+    }
+}
+
+.connect-section {
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1200px;
+}
+
+.connect-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    text-shadow: 0 0 10px var(--primary-glow);
+    font-size: 1.2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    padding: 0.5rem 1rem;
+    background-color: rgba(20, 23, 25, 0.7);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--light-text);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-glow);
+    transform: translateY(-2px);
+}
+
+.social-link span {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .connect-section {
+        padding: 0.75rem;
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+}
