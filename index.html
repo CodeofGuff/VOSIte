@@ -7,62 +7,75 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="menu">
+        <div class="menu-content">
+            <a href="index.html" class="menu-item">Home</a>
+        </div>
+    </nav>
+
     <main class="container">
-        <section class="profile-section">
-            <div class="profile-image">
-                <img src="assets/images/DEFAULT.png" alt="Voice Actor Profile Picture">
-            </div>
-        </section>
+        <img src="https://i.imgur.com/0NI9XLf.png" alt="Voice Actor Profile Picture" class="profile-image">
 
-        <section class="demo-reel">
-            <h2>Voice Demos</h2>
-            <div class="audio-player">
-                <div class="player-controls">
-                    <button id="playBtn" class="control-btn">Play</button>
-                    <div class="progress-bar">
-                        <div class="progress"></div>
+        <div class="content-wrapper">
+            <div class="flex-container">
+                <section class="demo-reel">
+                    <h2>Voice Demos</h2>
+                    <div class="voice-demos">
+                        <div class="demo-item">
+                            <h3>Character Demo Main</h3>
+                            <iframe width="100%" height="100" 
+                                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/david-guffre/davidguffre_characterdemo2020&color=%23a4a0b9&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&sharing=false&download=false&show_artwork=false&show_playcount=false&buying=false&show_user=false&single_active=true&visual=false&theme_color=141719&background_color=141719">
+                            </iframe>
+                        </div>
+                        <div class="demo-item">
+                            <h3>Character Demo</h3>
+                            <iframe width="100%" height="100" 
+                                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/david-guffre/davidguffre_2019chardemos_v2&color=%23a4a0b9&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&sharing=false&download=false&show_artwork=false&show_playcount=false&buying=false&show_user=false&single_active=true&visual=false&theme_color=141719&background_color=141719">
+                            </iframe>
+                        </div>
+                        <div class="demo-item">
+                            <h3>Commercial Demo</h3>
+                            <iframe width="100%" height="100" 
+                                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/david-guffre/davidguffre_commercialdemo2020&color=%23a4a0b9&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&sharing=false&download=false&show_artwork=false&show_playcount=false&buying=false&show_user=false&single_active=true&visual=false&theme_color=141719&background_color=141719">
+                            </iframe>
+                        </div>
                     </div>
-                    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
-                </div>
-                <div class="playlist">
-                    <div class="track" data-src="demo1.mp3">Commercial Demo</div>
-                    <div class="track" data-src="demo2.mp3">Character Voice 1</div>
-                    <div class="track" data-src="demo3.mp3">Character Voice 2</div>
-                    <div class="track" data-src="demo4.mp3">Narration Sample</div>
-                    <div class="track" data-src="demo5.mp3">Animation Demo</div>
-                </div>
-            </div>
-        </section>
+                </section>
 
-        <section class="about-section">
-            <h2>About Me</h2>
-            <p>Welcome! I'm a versatile voice actor with experience in commercials, animation, video games, and narration. My voice has been described as warm, engaging, and adaptable to various character types.</p>
-            <div class="skills">
-                <h3>Specialties</h3>
-                <ul>
-                    <li>Commercial Narration</li>
-                    <li>Character Voices</li>
-                    <li>Animation</li>
-                    <li>Video Game Voices</li>
-                    <li>Corporate Narration</li>
-                </ul>
+                <section class="about-section">
+                    <h3>Hey there!</h3>
+                    <br>
+                    <p class="welcome-text">
+                    The immersion a great voice actor is able to provide a project is my drive to perform.
+                    </p>    
+                    <br>
+                    <p class="welcome-text">
+                    My name is David Guffre and I have been obsessed with voice acting since I first booted up Starcraft in 1999 and listened to some of the most immersing voice acting I had experienced at the tenured age of 9. And it has stuck with me through the years and inspired me on this course.
+                    </p>
+                    <br>
+                    <p class="welcome-text">
+                    Creating different characters and voices is something I had done before I realized this was even a profession. Now, I have made a choice to pursue capturing that feeling I had when I was younger and creating an immersive world for the listener.
+                    </p>
+                    <br>
+                    <p class="welcome-text">
+                    With over 7 years of experience in the industry, I've had the opportunity to work with a variety of clients and voice many characters. From warm and friendly to bold and dramatic, I have the versatility and range to capture the essence you are looking for.
+                    </p>
+                    <br>
+                    <p class="welcome-text">
+                    Thank you for visiting and I look forward to the opportunity to work with you on your next project!
+                </p>
+                </section>
             </div>
-        </section>
+        </div>
 
-        <section class="connect-section">
-            <h2>Connect With Me</h2>
-            <div class="social-links">
-                <a href="https://bsky.app/profile/iamguff.bsky.social" target="_blank" class="social-link">
-                  
-                    <span>Bluesky</span>
-                </a>
-                <a href="https://www.linkedin.com/in/davidguffre/" target="_blank" class="social-link">
-                  
-                    <span>LinkedIn</span>
-                </a>
+        <section class="video-samples">
+            <h2>Video Samples</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Wgu0kXS3WT8" title="Window Man" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/3TEX7Xptgxc" title="Boiling Steel" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/alIgd3bvIQ4" title="The Last Epoch" allowfullscreen></iframe>
             </div>
         </section>
     </main>
-    <script src="scripts.js"></script>
 </body>
-</html>
+</html> 
